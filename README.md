@@ -1,6 +1,6 @@
 # Chat-GPT
 Ai-Chat
 
-Update the key on line 51 of the index.html file
+Update the key on line 54 of the index.html file
 
 
