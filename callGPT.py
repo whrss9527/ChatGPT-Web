@@ -5,13 +5,7 @@ import time
 
 app = Flask(__name__)
 
-def print_message(message):
-    responseText = ""
-    index = 0
 
-    print(message)
-
-    print()
 
 @app.route('/chatgpt', methods=['POST'])
 def callCHATGPT():
@@ -34,11 +28,7 @@ def callCHATGPT():
     if response.status_code == 200:
         json_data = json.loads(response.text)
         response = json_data["choices"][0]["message"]["content"]
-
         print(response)
-        
-        print_message(response)
-
         return response
 
 if __name__ == '__main__':
