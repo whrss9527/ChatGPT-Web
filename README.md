@@ -14,8 +14,10 @@ pip install requests
 ```
 
 把key放入，使用post请求
-http://localhost:8080/chatgpt
+> http://localhost:8080/chatgpt
+````json
 {
     "message": "要发送的消息"
 }
-。
+````
+
